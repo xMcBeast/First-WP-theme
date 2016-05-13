@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # fonts
+# Branding
 # Normalize
 # Typography
 # Elements
@@ -49,6 +50,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Fonts
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800);
+
+/*--------------------------------------------------------------
+# Branding
+--------------------------------------------------------------*/
+.site-title {
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.site-description {
+	position: relative;
+	bottom: 10px;
+}
 
 /*--------------------------------------------------------------
 # Normalize
@@ -575,6 +589,7 @@ a:active {
 	background-color: #212121;
 	width: 100%;
 	letter-spacing: 2px;
+	border-radius: 50px;
 	font-weight: bold;
 }
 
@@ -585,10 +600,11 @@ a:active {
 	padding-left: 0;
 }
 
-.main-navigation li {
+.main-navigation ul li {
 	color: #fff;
 	float: left;
 	position: relative;
+	text-align: -webkit-center;
 }
 
 .main-navigation a {
@@ -656,8 +672,9 @@ a:active {
 	top: 0px;
 	height: 50px;
 	width: 100%;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: bold;
+	color: white;
 	left: 50%;
 	transform: translateX(-50%);
 }
