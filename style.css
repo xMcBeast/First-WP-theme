@@ -2,7 +2,7 @@
 Theme Name: Pretty sick
 Theme URI: http://underscores.me/
 Author: Underscores.me
-Author URI: http://underscores.me/
+Author URI: http://outletdesigns.net
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# fonts
 # Normalize
 # Typography
 # Elements
@@ -43,6 +44,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800);
 
 /*--------------------------------------------------------------
 # Normalize
@@ -266,9 +272,9 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
+	color: #2B2B2B;
+	font-family: 'open sans', sans-serif;
+	font-size: 14px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -283,7 +289,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 0.2em;
 }
 
 dfn,
@@ -303,7 +309,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: "open sans", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -317,7 +323,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: 'open sans', Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -330,7 +336,7 @@ acronym {
 
 mark,
 ins {
-	background: #fff9c0;
+	background: #4DFAFA;
 	text-decoration: none;
 }
 
