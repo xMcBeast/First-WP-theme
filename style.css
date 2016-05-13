@@ -286,10 +286,11 @@ h4,
 h5,
 h6 {
 	clear: both;
+	margin: 0.40em 0;
 }
 
 p {
-	margin-bottom: 0.2em;
+	margin-bottom: 0.1em;
 }
 
 dfn,
@@ -531,15 +532,17 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #33498F;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	color: #4464CF;
 }
 
 a:hover,
@@ -564,7 +567,10 @@ a:active {
 	clear: both;
 	display: block;
 	float: left;
+	background-color: #212121;
 	width: 100%;
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 
 .main-navigation ul {
@@ -575,20 +581,24 @@ a:active {
 }
 
 .main-navigation li {
+	color: #fff;
 	float: left;
 	position: relative;
 }
 
 .main-navigation a {
+	padding: 15px;
+	color: #fff;
 	display: block;
 	text-decoration: none;
 }
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	background-color: #363636;
 	float: left;
 	position: absolute;
-	top: 1.5em;
+	top: 3.4em;
 	left: -999em;
 	z-index: 99999;
 }
@@ -596,18 +606,16 @@ a:active {
 .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
+	border-left: 1px solid #545454;
 }
 
 .main-navigation ul ul a {
 	width: 200px;
 }
 
-.main-navigation ul ul li {
-
-}
-
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+	background-color: #707070;
 }
 
 .main-navigation ul ul :hover > a,
@@ -632,18 +640,68 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+	background-color: #545454;
 }
 
 /* Small menu. */
-.menu-toggle,
+.menu-toggle {
+	display: inline-block;
+	border: none;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: bold;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .main-navigation.toggled ul {
 	display: block;
+	float: none;
+	clear: none;
+}
+
+@media screen and (max-width: 37.5em) {
+	.main-navigation li {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		left: 0;
+		top: 100%;
+	}
+
+	.main-navigation ul ul {
+		width: 100%;
+	}
+
+	.main-navigation ul ul li {
+		position: relative;
+		text-align: -webkit-center;
+	}
+
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul li.focus > ul {
+		left: 0;
+	}
+
+	.main-navigation ul ul ul {
+		left: -999em;
+		top: 0;
+		border-left: none;
+	}
+
 }
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: block;
 	}
