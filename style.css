@@ -287,6 +287,11 @@ h5,
 h6 {
 	clear: both;
 	margin: 0.40em 0;
+	font-weight: 400;
+}
+
+h1 {
+	font-weight: 300;
 }
 
 p {
